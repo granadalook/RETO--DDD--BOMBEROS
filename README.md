@@ -21,7 +21,8 @@ Proyecto realizado con la version JDK java 11  con las dependecias de sofkaU <co
 ![JAVA](https://user-images.githubusercontent.com/74884635/169477936-37e07407-f274-4fc0-9d76-7c5fbd689514.png)
 
 # ----------------------------------------------------------------------------------------------------
-![IMPLEMENTACION](https://user-images.githubusercontent.com/74884635/169477978-46780538-f7fa-4c32-ae1d-de7b6d74e10e.png)
+![Arreglo](https://user-images.githubusercontent.com/74884635/169606271-e8af8800-98d5-4f30-aace-d3b590ee4665.png)
+
 
 # TEST PASS
 ![TEST PASS](https://user-images.githubusercontent.com/74884635/169478052-23a04602-4649-414e-9ed5-20998af1cc7c.png)
