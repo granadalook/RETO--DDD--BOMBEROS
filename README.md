@@ -1,6 +1,7 @@
 # RETO--DDD--BOMBEROS
 Reto DDD para sofkaU   aplicando e implementando el modelo de dominio
-
+# DDD
+Domain  -  Driven  -  Desing
 # DOC 
 Proyecto realizado con la version JDK java 11  con las dependecias de sofkaU <co.com.sofka>   pruebas  con org.junit.jupiter y org.mockito
 
