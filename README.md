@@ -15,13 +15,14 @@ Proyecto realizado con la version JDK java 11  con las dependecias de sofkaU <co
 # MODELO DOMINIO USAR === URBAN SEARD AND RESCUE 
 ![MODELOUSAR](https://user-images.githubusercontent.com/74884635/169477179-4b6ddf6d-4315-4f3b-ab7e-0cd51cfe9963.png)
 # SIGUIENTE PARTE
-![MODELOUSAR2](https://user-images.githubusercontent.com/74884635/169477183-f0e58556-58e8-4e8d-8d7e-8ffd6f237b8a.png)
+![Arreglo](https://user-images.githubusercontent.com/74884635/169606271-e8af8800-98d5-4f30-aace-d3b590ee4665.png)
 #  IMPLEMANTACION
 
 ![JAVA](https://user-images.githubusercontent.com/74884635/169477936-37e07407-f274-4fc0-9d76-7c5fbd689514.png)
 
 # ----------------------------------------------------------------------------------------------------
-![Arreglo](https://user-images.githubusercontent.com/74884635/169606271-e8af8800-98d5-4f30-aace-d3b590ee4665.png)
+
+![IMPLEMENTACION](https://user-images.githubusercontent.com/74884635/169606422-e1797432-4f91-4b54-a68a-5275a1bb1076.png)
 
 
 # TEST PASS
