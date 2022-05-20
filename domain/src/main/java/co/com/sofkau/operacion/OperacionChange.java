@@ -15,9 +15,7 @@ public class OperacionChange extends EventChange {
             operacion.lider = new Lider(event.liderId(), event.nombre(), event.nacionalidad(), event.edad(), event.rango(), event.genero());
         });
 
-        apply((NombreActualizado event) -> {
-            operacion.nombre = event.nombre();
-        });
+
         apply((OperacionCreada event) -> {
             operacion.nombre = event.nombre();
             operacion.victimas = event.victimas();
@@ -40,11 +38,5 @@ public class OperacionChange extends EventChange {
         });
 
 
-        apply((UnidadRescatistaRetirada event) -> {
-            var numeroUnidades = operacion.unidadUsarIds.size();
-            if (numeroUnidades <= 1)
-                throw new IllegalArgumentException("Una operacion no puede quedarse sin unidades de rescatistas");
-            operacion.unidadUsarIds.removeIf(unidadUsarId -> unidadUsarId.equals(event.getUnidadUsarId()));
-        });
     }
 }

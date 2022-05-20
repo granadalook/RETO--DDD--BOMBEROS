@@ -18,12 +18,7 @@ public class UnidadUsarChange extends EventChange {
         apply((RscatistaAsignado event)->{
             unidadUsar.rscatistas.add(new Rscatista(event.rescatistaId(),event.nombre(), event.nacionalidad(), event.edad(), event.rango(), event.genero()));
         });
-        apply((RescatistaRetirado event)->{
-            var numeroRescatistas = unidadUsar.rscatistas.size();
-            if (numeroRescatistas<=1)
-                throw new IllegalArgumentException("No puedes dejar una unidad sin rescatistras");
-            unidadUsar.rscatistas.removeIf(rescatista -> rescatista.identity().equals(event.RescatistaId()));
-        });
+
         apply((TipoUnudadActualizada event)->{
             unidadUsar.tipoUnidad= event.tipoUnidad();
         });
@@ -34,8 +29,6 @@ public class UnidadUsarChange extends EventChange {
             unidadUsar.equipos=event.equipos();
             unidadUsar.camions=event.camions();
         });
-        apply((CamionAsignado event)->{
-            unidadUsar.camions.add(new Camion(event.CamionId(), event.TipoCamion(),event.PropositoCamion()));
-        });
+
     }
 }

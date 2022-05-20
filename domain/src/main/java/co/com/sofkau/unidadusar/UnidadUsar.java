@@ -70,12 +70,7 @@ public class UnidadUsar extends AggregateEvent<UnidadUsarId> {
         appendChange(new RscatistaAsignado(rescatistaId,nombre,nacionalidad,edad,rango,genero));
     }
 
-    public void AsignarCamion(CamionId camionId, TipoCamion tipoCamion, PropositoCamion propositoCamion){
-        Objects.requireNonNull(camionId);
-        Objects.requireNonNull(tipoCamion);
-        Objects.requireNonNull(propositoCamion);
-        appendChange(new CamionAsignado(camionId,tipoCamion,propositoCamion));
-    }
+
 
     public void AsignarEncargado(RescatistaId rescatistaId, Nombre nombre, Nacionalidad nacionalidad, Edad edad,Rango rango, Genero genero){
         Objects.requireNonNull(rescatistaId);
@@ -87,10 +82,7 @@ public class UnidadUsar extends AggregateEvent<UnidadUsarId> {
         appendChange(new EncargadoAsignado(rescatistaId,nombre,nacionalidad,edad,rango,genero));
     }
 
-    public void RetirarRescatista(RescatistaId rescatistaId){
-        Objects.requireNonNull(rescatistaId);
-        appendChange(new RescatistaRetirado(rescatistaId));
-    }
+
 
     public void AgregarEquipo(EquiposId equiposId, TipoEquipo tipoEquipo){
         Objects.requireNonNull(equiposId);

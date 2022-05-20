@@ -5,7 +5,7 @@ import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofkau.generi.values.*;
-import co.com.sofkau.operacion.entitys.Victima.Victima;
+
 import co.com.sofkau.operacion.entitys.liderO.Lider;
 import co.com.sofkau.operacion.entitys.liderO.LiderId;
 import co.com.sofkau.operacion.events.OperacionCreada;
@@ -13,6 +13,7 @@ import co.com.sofkau.operacion.values.Descripcion;
 import co.com.sofkau.operacion.values.Pais;
 import co.com.sofkau.operacion.values.Region;
 import co.com.sofkau.unidadmedica.commands.ValorarVictima;
+import co.com.sofkau.unidadmedica.entitys.VictimaR.Victima;
 import co.com.sofkau.unidadmedica.entitys.VictimaR.VictimaId;
 import co.com.sofkau.unidadmedica.events.VictimaValorada;
 import co.com.sofkau.unidadusar.UnidadUsarId;
@@ -72,11 +73,15 @@ class ValorarVictimaUseCaseTest {
         Lider lider = new Lider(LiderId.of("123"), new Nombre("Jhon Stiven"), new Nacionalidad("Colombiano"),
                 new Edad(25), new Rango("General"), new Genero('H'));
         Set<Victima> victimas = new HashSet<>();
-        Victima victima = new Victima(co.com.sofkau.operacion.entitys.Victima.VictimaId.of("45"), new Nombre("Juan Fernando castaño"),
+        Victima victima = new Victima(VictimaId.of("45"), new Nombre("Juan Fernando castaño"),
                 new Nacionalidad("Chileno"), new EdadVictima(50), new Genero('H'));
 
+
+        Set<co.com.sofkau.operacion.entitys.Victima.Victima> victimaOs = new HashSet<>();
+        Victima victimao = new Victima(VictimaId.of("45"), new Nombre("Juan Fernando castaño"),
+                new Nacionalidad("Chileno"), new EdadVictima(50), new Genero('H'));;
         return List.of(new OperacionCreada(unidadUsarIds, lider, new Descripcion("Busqueda victimas"),
                 new Region("quilpue"), new Pais("Chile"), new Nombre("busqueda y rescate urbano "),
-                victimas));
+                victimaOs));
     }
 }

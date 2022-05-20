@@ -85,17 +85,9 @@ public class Operacion extends AggregateEvent<OperacionId> {
     }
 
     public void asignarUnidad(UnidadUsarId unidadUsarId) {
-        Objects.requireNonNull(unidadUsarId);
+        Objects.requireNonNull(unidadUsarId," ID  de la unidad  obligatoria ");
         appendChange(new UnidadRescatistaAsignada(unidadUsarId));
     }
 
-    public void retirarUnidad(UnidadUsarId unidadUsarId) {
-        Objects.requireNonNull(unidadUsarId);
-        appendChange(new UnidadRescatistaRetirada(unidadUsarId));
-    }
 
-    public void actualizarNombre(Nombre nombre) {
-        Objects.requireNonNull(nombre);
-        appendChange(new NombreActualizado(nombre));
-    }
 }
