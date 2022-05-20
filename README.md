@@ -1,5 +1,10 @@
 # RETO--DDD--BOMBEROS
 Reto DDD para sofkaU   aplicando e implementando el modelo de dominio
+
+# DOC 
+Proyecto realizado con la version JDK java 11  con las dependecias de sofkaU <co.com.sofka>   priebas  con org.junit.jupiter y org.mockito
+
+
 # MODELO DE DOMINIO BASADO EN BOMBROS COLOMBIA
 ![MODELO DOMINIO](https://user-images.githubusercontent.com/74884635/169476962-3c84a1ff-4754-429f-b385-e2505415155b.png)
 
