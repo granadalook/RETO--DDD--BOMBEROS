@@ -8,7 +8,14 @@ import co.com.sofkau.unidadusar.entitys.rescatista.Rscatista;
 import co.com.sofkau.unidadusar.values.TipoUnidad;
 
 import java.util.Set;
-
+/**
+ * Comando  CrearUnidadUsar
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class CrearUnidadUsar extends Command {
     private final UnidadUsarId unidadUsarId;
     private final TipoUnidad tipoUnidad;

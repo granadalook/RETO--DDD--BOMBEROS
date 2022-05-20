@@ -4,7 +4,15 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Locale;
 import java.util.Objects;
+/**
+ * TipoUnidad es un  objeto de valor del  agregado UnidadUsar
 
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class TipoUnidad implements ValueObject<String> {
     private final String value;
 

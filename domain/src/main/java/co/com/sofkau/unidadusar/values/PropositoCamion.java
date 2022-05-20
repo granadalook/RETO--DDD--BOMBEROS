@@ -3,7 +3,15 @@ package co.com.sofkau.unidadusar.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
+/**
+ * PropositoCamion es un  objeto de valor del  agregado UnidadUsar
 
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class PropositoCamion implements ValueObject<String> {
     private final String value;
 

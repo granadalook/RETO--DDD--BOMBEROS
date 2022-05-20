@@ -16,7 +16,14 @@ import co.com.sofkau.unidadusar.values.*;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+/**
+ * Agregado ROOT Unidad USAR
 
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class UnidadUsar extends AggregateEvent<UnidadUsarId> {
     protected TipoUnidad tipoUnidad;
     protected Set<Rscatista> rscatistas;

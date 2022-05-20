@@ -6,7 +6,14 @@ import co.com.sofkau.generi.values.*;
 import co.com.sofkau.unidadmedica.UnidadMedId;
 import co.com.sofkau.unidadmedica.entitys.LiderM.LiderId;
 
-
+/**
+ * Comando  AsignarLiderMed
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class AsignarLiderMed extends Command {
     private final UnidadMedId unidadMedId;
     private final LiderId liderId;

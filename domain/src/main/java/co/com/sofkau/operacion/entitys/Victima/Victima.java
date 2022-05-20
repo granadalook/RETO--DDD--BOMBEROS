@@ -5,6 +5,14 @@ import co.com.sofkau.generi.values.EdadVictima;
 import co.com.sofkau.generi.values.Genero;
 import co.com.sofkau.generi.values.Nacionalidad;
 import co.com.sofkau.generi.values.Nombre;
+/**
+ * Entidad victima
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 
 public class Victima extends Entity<VictimaId> {
     private Nombre nombre;

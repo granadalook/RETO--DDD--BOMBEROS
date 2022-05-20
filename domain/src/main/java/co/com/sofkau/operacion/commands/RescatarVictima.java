@@ -7,7 +7,14 @@ import co.com.sofkau.generi.values.EdadVictima;
 import co.com.sofkau.generi.values.Genero;
 import co.com.sofkau.generi.values.Nacionalidad;
 import co.com.sofkau.generi.values.Nombre;
-
+/**
+ * Comando  RescatarVictima
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class RescatarVictima extends Command {
     private final OperacionId operacionId;
     private final VictimaId victimaId;

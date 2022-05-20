@@ -8,7 +8,14 @@ import co.com.sofkau.generi.values.Nombre;
 import co.com.sofkau.unidadmedica.UnidadMedId;
 import co.com.sofkau.unidadmedica.entitys.VictimaR.VictimaId;
 
-
+/**
+ * Comando  ValorarVictima
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class ValorarVictima extends Command {
     private final UnidadMedId unidadMedId;
     private final VictimaId victimaId;

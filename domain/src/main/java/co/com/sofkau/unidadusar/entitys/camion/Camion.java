@@ -5,7 +5,13 @@ import co.com.sofkau.unidadusar.values.PropositoCamion;
 import co.com.sofkau.unidadusar.values.TipoCamion;
 
 import java.util.Objects;
-
+/**
+ * Entidad  Camion
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class Camion extends Entity<CamionId> {
 
     private TipoCamion tipoCamion;

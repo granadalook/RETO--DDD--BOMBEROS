@@ -4,7 +4,14 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofkau.generi.values.*;
 import co.com.sofkau.operacion.OperacionId;
 import co.com.sofkau.operacion.entitys.liderO.LiderId;
-
+/**
+ * Comando  AsignarLider
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class AsignarLider extends Command {
     private final OperacionId operacionId;
     private final LiderId liderId;

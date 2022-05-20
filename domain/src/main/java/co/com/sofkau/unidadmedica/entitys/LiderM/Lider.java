@@ -5,6 +5,14 @@ import co.com.sofkau.generi.values.*;
 
 
 import java.util.Objects;
+/**
+ * Entidad LiderMedico
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 
 public class Lider extends Entity<LiderId> {
 

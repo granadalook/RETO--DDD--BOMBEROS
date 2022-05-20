@@ -5,7 +5,14 @@ import co.com.sofkau.unidadusar.UnidadUsarId;
 import co.com.sofkau.unidadusar.entitys.equipos.EquiposId;
 import co.com.sofkau.unidadusar.entitys.rescatista.RescatistaId;
 import co.com.sofkau.unidadusar.values.*;
-
+/**
+ * Comando  AgregarEquipos
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class AgregarEquipos  extends Command {
     private final UnidadUsarId unidadUsarId;
     private final EquiposId equiposId;

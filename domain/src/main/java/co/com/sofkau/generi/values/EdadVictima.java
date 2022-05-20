@@ -3,7 +3,14 @@ package co.com.sofkau.generi.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
-
+/**
+ * EdadVictima es un  objeto de valor generico
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class EdadVictima implements ValueObject<Integer> {
     private final Integer value;
 

@@ -4,7 +4,14 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofkau.generi.values.*;
 import co.com.sofkau.unidadusar.UnidadUsarId;
 import co.com.sofkau.unidadusar.entitys.rescatista.RescatistaId;
-
+/**
+ * Comando  AsignarEncargado
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class AsignarEncargado extends Command {
     private final UnidadUsarId unidadUsarId;
     private final RescatistaId rescatistaId;

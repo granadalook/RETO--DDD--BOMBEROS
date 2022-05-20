@@ -6,7 +6,14 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Objects;
 import java.util.Set;
-
+/**
+ * Rango es un  objeto de valor generico
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class Rango implements ValueObject<String> {
     private final String value;
 

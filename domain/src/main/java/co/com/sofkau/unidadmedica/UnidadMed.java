@@ -20,7 +20,14 @@ import co.com.sofkau.unidadusar.UnidadUsarChange;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+/**
+ * Agregado ROOT Unidad MEDICA
 
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class UnidadMed extends AggregateEvent<UnidadMedId> {
     protected Set<UnidadMedId> unidadMedIds;
     protected Lider lider;

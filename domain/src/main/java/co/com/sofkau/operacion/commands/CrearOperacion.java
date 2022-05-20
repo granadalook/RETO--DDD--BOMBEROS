@@ -11,7 +11,14 @@ import co.com.sofkau.unidadusar.UnidadUsarId;
 import co.com.sofkau.generi.values.Nombre;
 
 import java.util.Set;
-
+/**
+ * Comando  CrearOperacion
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class CrearOperacion extends Command {
     private final OperacionId operacionId;
     private final Set<UnidadUsarId> unidadUsarIds;

@@ -9,7 +9,6 @@ import co.com.sofkau.operacion.entitys.liderO.Lider;
 import co.com.sofkau.operacion.entitys.liderO.LiderId;
 import co.com.sofkau.operacion.events.*;
 import co.com.sofkau.operacion.values.Descripcion;
-import co.com.sofkau.generi.values.EdadVictima;
 import co.com.sofkau.operacion.values.Pais;
 import co.com.sofkau.operacion.values.Region;
 import co.com.sofkau.unidadusar.UnidadUsarId;
@@ -18,6 +17,14 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+/**
+ * Agregado ROOT Operaciones
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class Operacion extends AggregateEvent<OperacionId> {
     protected Set<UnidadUsarId> unidadUsarIds;
     protected Lider lider;

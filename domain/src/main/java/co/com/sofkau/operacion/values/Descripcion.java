@@ -3,7 +3,14 @@ package co.com.sofkau.operacion.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
-
+/**
+ * Descripcion es un  objeto de valor del  agregado Operacion
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class Descripcion implements ValueObject<String> {
     private final String value;
 

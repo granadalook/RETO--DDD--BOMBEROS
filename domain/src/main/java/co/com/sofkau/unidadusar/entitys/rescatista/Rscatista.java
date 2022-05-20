@@ -4,7 +4,14 @@ import co.com.sofka.domain.generic.Entity;
 import co.com.sofkau.generi.values.*;
 
 import java.util.Objects;
-
+/**
+ * Entidad  Rescatistas
+ *
+ * @Version 1.0
+ * @Author Jhon Stiven Granada Acevedo
+ * @Email tiven17.jsga@gmail.com
+ * *
+ */
 public class Rscatista extends Entity<RescatistaId> {
     private Nombre nombre;
     private Nacionalidad nacionalidad;
