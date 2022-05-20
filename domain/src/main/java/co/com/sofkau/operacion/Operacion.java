@@ -60,26 +60,26 @@ public class Operacion extends AggregateEvent<OperacionId> {
 
 
     public void rescatarVictima(VictimaId victimaId, Nombre nombre, Nacionalidad nacionalidad, EdadVictima edad, Genero genero) {
-        Objects.requireNonNull(victimaId);
-        Objects.requireNonNull(nombre);
-        Objects.requireNonNull(nacionalidad);
-        Objects.requireNonNull(edad);
-        Objects.requireNonNull(genero);
+        Objects.requireNonNull(victimaId,"Id de la victima requerido");
+        Objects.requireNonNull(nombre,"nombre requerido");
+        Objects.requireNonNull(nacionalidad,"nacionalidad requerida");
+        Objects.requireNonNull(edad,"edad requerida");
+        Objects.requireNonNull(genero,"genero requerido");
         appendChange(new VictimaRescatada(victimaId, nombre, nacionalidad, edad, genero));
     }
 
     public void actualizarDescripcion(Descripcion descripcion) {
-        Objects.requireNonNull(descripcion);
+        Objects.requireNonNull(descripcion,"descripcion  requerida");
         appendChange(new DescripcionActualizada(descripcion));
     }
 
     public void asignarLider(LiderId liderId, Nombre nombre, Nacionalidad nacionalidad, Edad edad, Rango rango, Genero genero) {
-        Objects.requireNonNull(liderId);
-        Objects.requireNonNull(nombre);
-        Objects.requireNonNull(nacionalidad);
-        Objects.requireNonNull(edad);
-        Objects.requireNonNull(rango);
-        Objects.requireNonNull(genero);
+        Objects.requireNonNull(liderId,"ID del lider requerido");
+        Objects.requireNonNull(nombre,"nombre requerido");
+        Objects.requireNonNull(nacionalidad,"nacionalidad requerida");
+        Objects.requireNonNull(edad,"edad requerida");
+        Objects.requireNonNull(rango," rango del lider requerido");
+        Objects.requireNonNull(genero,"genero requerido");
         appendChange(new LiderAsignado(liderId, nombre, nacionalidad, edad, rango, genero));
 
     }

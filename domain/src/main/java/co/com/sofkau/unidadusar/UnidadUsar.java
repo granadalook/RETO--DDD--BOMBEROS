@@ -55,38 +55,38 @@ public class UnidadUsar extends AggregateEvent<UnidadUsarId> {
     }
 
     public void ActualizarTipoUnidad(TipoUnidad tipoUnidad){
-        Objects.requireNonNull(tipoUnidad);
+        Objects.requireNonNull(tipoUnidad," tipo de unidad para actualizar requerida");
         appendChange(new TipoUnudadActualizada(tipoUnidad));
     }
 
     public void AsignarRescatista(RescatistaId rescatistaId, Nombre nombre, Nacionalidad nacionalidad,
                                   Edad edad, Rango rango, Genero genero){
-        Objects.requireNonNull(rescatistaId);
-        Objects.requireNonNull(nombre);
-        Objects.requireNonNull(nacionalidad);
-        Objects.requireNonNull(edad);
-        Objects.requireNonNull(rango);
-        Objects.requireNonNull(genero);
+        Objects.requireNonNull(rescatistaId,"Id del rescatista que vas a asignar al Grupo usar obligatorio ");
+        Objects.requireNonNull(nombre,"nombre del rescatista requerido ");
+        Objects.requireNonNull(nacionalidad,"nacionaliad  del rescatista requerido ");
+        Objects.requireNonNull(edad, " edad  del rescatista  requerido");
+        Objects.requireNonNull(rango," rango del rescatista requerido");
+        Objects.requireNonNull(genero, "genaro del rescatista requerido");
         appendChange(new RscatistaAsignado(rescatistaId,nombre,nacionalidad,edad,rango,genero));
     }
 
 
 
     public void AsignarEncargado(RescatistaId rescatistaId, Nombre nombre, Nacionalidad nacionalidad, Edad edad,Rango rango, Genero genero){
-        Objects.requireNonNull(rescatistaId);
-        Objects.requireNonNull(nombre);
-        Objects.requireNonNull(nacionalidad);
-        Objects.requireNonNull(edad);
-        Objects.requireNonNull(rango);
-        Objects.requireNonNull(genero);
+        Objects.requireNonNull(rescatistaId,"ID  del rescatista para   asiganar  requerido ");
+        Objects.requireNonNull(nombre,"  nombre del encargado requerido");
+        Objects.requireNonNull(nacionalidad," nacionalidad del encargado requerido");
+        Objects.requireNonNull(edad," edad del encargado requerido");
+        Objects.requireNonNull(rango," rango del encargado requerido ");
+        Objects.requireNonNull(genero, " genero del encargado requerido ");
         appendChange(new EncargadoAsignado(rescatistaId,nombre,nacionalidad,edad,rango,genero));
     }
 
 
 
     public void AgregarEquipo(EquiposId equiposId, TipoEquipo tipoEquipo){
-        Objects.requireNonNull(equiposId);
-        Objects.requireNonNull(tipoEquipo);
+        Objects.requireNonNull(equiposId, " Id del  equipo para aquegar a la unidad usar requerido ");
+        Objects.requireNonNull(tipoEquipo,"  tipo de equipo requerido  recuerda  que pueden ser herrramientas manuelas o electricas");
         appendChange(new EquiposAgregados(equiposId,tipoEquipo));
     }
 

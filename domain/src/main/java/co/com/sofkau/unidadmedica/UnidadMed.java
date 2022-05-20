@@ -63,22 +63,22 @@ public class UnidadMed extends AggregateEvent<UnidadMedId> {
     }
 
     public void valorarVictima(VictimaId victimaId, Nombre nombre, Nacionalidad nacionalidad, EdadVictima edad, Genero genero) {
-        Objects.requireNonNull(victimaId);
-        Objects.requireNonNull(nombre);
-        Objects.requireNonNull(nacionalidad);
-        Objects.requireNonNull(edad);
-        Objects.requireNonNull(genero);
+        Objects.requireNonNull(victimaId," ID de la  victima valorada requerido");
+        Objects.requireNonNull(nombre,"nombre de la victima valorada requerido");
+        Objects.requireNonNull(nacionalidad,"nacionalidad de la victima");
+        Objects.requireNonNull(edad,"edad de la victima requerido");
+        Objects.requireNonNull(genero,"genero de la victima requerido");
         appendChange(new VictimaValorada(victimaId, nombre, nacionalidad, edad, genero));
     }
 
 
     public void asignarLiderMed(LiderId liderId, Nombre nombre, Nacionalidad nacionalidad, Edad edad, Rango rango, Genero genero) {
-        Objects.requireNonNull(liderId);
-        Objects.requireNonNull(nombre);
-        Objects.requireNonNull(nacionalidad);
-        Objects.requireNonNull(edad);
-        Objects.requireNonNull(rango);
-        Objects.requireNonNull(genero);
+        Objects.requireNonNull(liderId,"ID del lider medico requerido");
+        Objects.requireNonNull(nombre," nombre del lider medico requerido");
+        Objects.requireNonNull(nacionalidad, " nacionalidad del lider medico requerido");
+        Objects.requireNonNull(edad," edad del lider medico requerido ");
+        Objects.requireNonNull(rango," rango del lider medico requerido recuerde que debe ser medico ");
+        Objects.requireNonNull(genero," genero del lider medico requerido");
         appendChange(new LiderMedAsignado(liderId, nombre, nacionalidad, edad, rango, genero));
 
     }
