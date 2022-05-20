@@ -25,3 +25,6 @@ Proyecto realizado con la version JDK java 11  con las dependecias de sofkaU <co
 
 # TEST PASS
 ![TEST PASS](https://user-images.githubusercontent.com/74884635/169478052-23a04602-4649-414e-9ed5-20998af1cc7c.png)
+
+# COVERTURA DEL TEST EN LAS CLASES 
+![Covertura](https://user-images.githubusercontent.com/74884635/169605756-d9a48a72-88d1-44f5-b612-7481e0cd8df6.png)
